@@ -1,0 +1,20 @@
+<a href="/">Home</a>
+
+<h3>User Details</h3>
+<br/>
+<table id="tblDetails" border="1">
+  <tr>
+  <th>User Name</th>
+  <th>Email</th>
+  <th>Mobile</th>
+  <th>City</th>
+</tr>
+<% _.each(user,function(users){ %>
+<tr>
+  <td><%= users.name %></td>
+  <td><%= users.email %></td>
+  <td><%= users.mobile %></td>
+  <td><%= users.city %></td>
+</tr>
+<% }); %>
+</table>
